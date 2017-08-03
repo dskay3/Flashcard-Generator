@@ -3,17 +3,21 @@ const chalk = require('chalk');
 
 // ClozeCard constructor
 var ClozeCard = function (text, cloze) {
-    // Contains the full text
-    this.fullText = text;
+    if (this instanceof ClozeCard) {
+        // Contains the full text
+        this.fullText = text;
 
-    // Contains the cloze-deleted portion of the text
-    this.cloze = cloze;
+        // Contains the cloze-deleted portion of the text
+        this.cloze = cloze;
 
-    // Contains the partial text
-    this.partial(this.fullText, this.cloze);
+        // Contains the partial text
+        this.partial(this.fullText, this.cloze);
 
-    // Checks to see if there is a cloze in the text
-    this.clozeChecker(this.fullText, this.cloze);
+        // Checks to see if there is a cloze in the text
+        this.clozeChecker(this.fullText, this.cloze);
+    } else {
+        return new ClozeCard(text, cloze);
+    }
 }
 
 // Partial property that only contains the partial text
