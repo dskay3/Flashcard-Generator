@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "Flashcard-Generator NPM",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dskay3"
+  },
+  "keywords": [
+    "Flash",
+    "Flashcards"
+  ],
+  "author": "Daniel Kim",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1"
+  }
+}
