@@ -1,4 +1,4 @@
-# Flashcard-Generator
+# Flashcard Generator
 Flashcard Generator
 
 Backend for flashcard application.
